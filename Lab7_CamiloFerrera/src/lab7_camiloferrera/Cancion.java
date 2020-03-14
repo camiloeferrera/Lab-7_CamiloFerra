@@ -1,6 +1,8 @@
 package lab7_camiloferrera;
 
-public class Cancion {
+import java.io.Serializable;
+
+public class Cancion implements Serializable {
     private String nombre;
     private int duracion; // en segundos
 

@@ -1,9 +1,10 @@
 package lab7_camiloferrera;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 
-public class Usuario {
+public class Usuario implements Serializable {
     private String nombre,usuario,contraseña;
     private int edad;
     private ArrayList<Evento> eventos = new ArrayList();
@@ -60,6 +61,11 @@ public class Usuario {
     }
     public void setAdministrador(boolean administrador) {
         this.administrador = administrador;
+    }
+
+    @Override
+    public String toString() {
+        return nombre;
     }
     
     
